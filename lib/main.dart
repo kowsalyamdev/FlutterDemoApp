@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Bottom Tab Bar',
         home: BottomTabBar(),
+        debugShowCheckedModeBanner: false,
       ),
     );
   }
