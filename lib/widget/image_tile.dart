@@ -4,10 +4,13 @@ import 'package:flutter/material.dart';
 class ImageTile extends StatelessWidget {
   final String imageUrl;
   final String title;
+  final String description;
+
 
   ImageTile({
     required this.imageUrl,
     required this.title,
+    required this.description,
   });
 
   @override
@@ -45,6 +48,7 @@ class ImageTile extends StatelessWidget {
             ),
           ),
         ),
+
         Container(
           padding: EdgeInsets.all(4.0),
           child: Text(
@@ -63,7 +67,7 @@ class ImageTile extends StatelessWidget {
         Container(
           padding: EdgeInsets.all(4.0),
           child: Text(
-            title,
+            description,
             style: TextStyle(
               color: Colors.white,
               fontSize: 12.0,

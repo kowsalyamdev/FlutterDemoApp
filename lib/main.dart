@@ -1,9 +1,9 @@
-import 'package:DemoApp/screens/map.dart';
+import '../screens/map.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_floating_bottom_nav_bar/floating_bottom_nav_bar.dart';
 import 'package:simple_floating_bottom_nav_bar/floating_item.dart';
 
-import 'home.dart';
+import 'screens/home.dart';
 
 void main() {
   runApp(MyApp());

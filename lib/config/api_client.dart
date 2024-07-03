@@ -1,15 +1,15 @@
 import 'dart:io';
+
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
 
 enum DioMethod { post, get, put, delete }
 
-class APIService {
+class ApiClient {
   var token = "b2atclr0nk1po45amg305meheqf4xrjt9a1bo410";
 
-  APIService._singleton();
+  ApiClient._singleton();
 
-  static final APIService instance = APIService._singleton();
+  static final ApiClient instance = ApiClient._singleton();
 
   String get baseUrl {
     // if (kDebugMode) {

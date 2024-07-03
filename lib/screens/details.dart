@@ -1,9 +1,6 @@
-import 'package:DemoApp/screens/banner.dart';
-import 'package:DemoApp/screens/image_tile.dart';
-import 'package:cached_network_image/cached_network_image.dart';
+import '../widget/image_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-
 import '../models/user.dart';
 
 class UserDetailsPage extends StatelessWidget {
@@ -32,7 +29,8 @@ class UserDetailsPage extends StatelessWidget {
                     position: LatLng(lat, lng),
                     infoWindow: InfoWindow(
                       title: name,
-                      snippet: 'Your location',
+                        snippet: 'lat:'+ user.latitude!.toString() +"\t" +"lng:" +user.longitude!.toString()
+
                     ),
                   )
                 }
@@ -75,6 +73,7 @@ class UserDetailsPage extends StatelessWidget {
                 ImageTile(
                   imageUrl: user.picture,
                   title: user.firstName + " " + user.lastName,
+                  description: user.email,
                 ),
               ],
             ),
@@ -110,13 +109,12 @@ class UserDetailsPage extends StatelessWidget {
                       size: 24.0,
                     ),
                     SizedBox(width: 8.0),
-                    Text('Apologies. Unable to show location of ${name}.',
+                    Text('Apologies. Unable to show exact location of ${name}.',
                         textAlign: TextAlign.center,
                         style: TextStyle(
-                          fontSize: 12,
+                          fontSize: 10,
                           fontWeight: FontWeight.bold,
                           fontFamily: 'Montserrat',
-
                           color: Colors.white,
                           decoration: TextDecoration.none,
                         )),
@@ -134,7 +132,9 @@ class UserDetailsPage extends StatelessWidget {
     lat = user.latitude!;
     lng = user.longitude!;
     showMap = lat != null && lat != 0.0 && lng != null && lng != 0.0;
-
-    print('Error: Invalid location' + lat.toString() + " " + lng.toString());
+    if(!showMap)
+      print('Error: Invalid location:' + lat.toString() + " " + lng.toString());
+    else
+      print('User location:' + lat.toString() + " " + lng.toString());
   }
 }

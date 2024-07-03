@@ -1,10 +1,10 @@
 import 'dart:convert';
+import '../screens/details.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:DemoApp/config/UserService.dart';
-import 'package:DemoApp/models/user.dart';
+import '../config/user_service.dart';
+import '../models/user.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'details.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
             "USERS LIST",
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              fontSize:16,
+              fontSize: 16,
               fontFamily: 'Montserrat',
               color: Colors.white,
             ),
@@ -94,13 +94,13 @@ class _HomePageState extends State<HomePage> {
                                       width: 60,
                                       height: 60,
                                       child: DecoratedBox(
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            border: Border.all(
-                                              color: Colors.red,
-                                              width: 1.0,
-                                            ),
+                                        decoration: BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          border: Border.all(
+                                            color: Colors.red,
+                                            width: 1.0,
                                           ),
+                                        ),
                                         child: Padding(
                                           padding: const EdgeInsets.all(2.0),
                                           child: Container(
@@ -111,15 +111,18 @@ class _HomePageState extends State<HomePage> {
                                                 width: 50,
                                                 height: 50,
                                                 fit: BoxFit.cover,
-                                                progressIndicatorBuilder: (context,
-                                                        url, downloadProgress) =>
+                                                progressIndicatorBuilder: (
+                                                    context,
+                                                    url, downloadProgress) =>
                                                     Center(
-                                                  child: CircularProgressIndicator(
-                                                      color: Colors.grey,
-                                                      value:
-                                                          downloadProgress.progress),
-                                                ),
-                                                errorWidget: (context, url, error) =>
+                                                      child: CircularProgressIndicator(
+                                                          color: Colors.grey,
+                                                          value:
+                                                          downloadProgress
+                                                              .progress),
+                                                    ),
+                                                errorWidget: (context, url,
+                                                    error) =>
                                                     Icon(Icons.error),
                                               ),
                                             ),
@@ -130,9 +133,10 @@ class _HomePageState extends State<HomePage> {
                                   Flexible(
                                     child: Column(
                                         crossAxisAlignment:
-                                            CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                         children: [
-                                          Text(_user.firstName +"\t"+ _user.lastName,
+                                          Text(_user.firstName + "\t" +
+                                              _user.lastName,
                                               style: TextStyle(
                                                   color: Colors.black,
                                                   fontSize: 15,
@@ -144,7 +148,15 @@ class _HomePageState extends State<HomePage> {
                                           Text(_user.lastName,
                                               style: TextStyle(
                                                   fontFamily: 'Montserrat',
-                                                  color: Colors.grey[500])),
+                                                  color: Colors.grey[700])),
+                                          SizedBox(
+                                            height: 5,
+                                          ),
+                                          Text(_user.email,
+                                              style: TextStyle(
+                                                  fontFamily: 'Montserrat',
+                                                  fontSize: 10,
+                                                  color: Colors.grey[400])),
                                         ]),
                                   )
                                 ]),
