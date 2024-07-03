@@ -1,6 +1,8 @@
-![ScreenShot](https://{[url](https://github.com/kowsalyamdev/FlutterDemoApp/main/screenshots/Screenshot1.png)})
-![ScreenShot](https://{[url](https://github.com/kowsalyamdev/FlutterDemoApp/main/screenshots/Screenshot2.png)})
-![ScreenShot](https://{[url](https://github.com/kowsalyamdev/FlutterDemoApp/main/screenshots/Screenshot3.png)})
-![ScreenShot](https://{[url](https://github.com/kowsalyamdev/FlutterDemoApp/main/screenshots/Screenshot4.png)})
 
 
+<div align="center">
+    <img src="screenshots/Screenshot1.png" width="400px"</img> 
+   <img src="screenshots/Screenshot2.png" width="400px"</img> 
+   <img src="screenshots/Screenshot3.png" width="400px"</img> 
+   <img src="screenshots/Screenshot4.png" width="400px"</img> 
+</div>
