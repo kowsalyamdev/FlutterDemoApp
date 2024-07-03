@@ -43,6 +43,9 @@ Connect an Android or iOS device to your computer, or start an emulator.
 In your coding app, look for a "Run" or "Debug" button and click it to launch the app on the connected device or emulator.
 ## Google map key 
 -- you can use my existing key in the code or you can use your own key
+## Testing 
+ -- two test cases for getting number users success and failure case using mockito
+ -- for testing testcases -Run following command inside project folder "flutter pub  run build_runner build"
 ### Screenshots:
 
 <div align="center">
