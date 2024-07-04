@@ -19,7 +19,9 @@
 - Add marker on the map based on the provided latitude/longitude in `location`.
 - Display the person name on the marker when it is tapped.
 ### Screenshots:
-
+<div >
+<img src="screenshots/screenshot.gif" alt="My Project GIF" width="500" height="600">
+</div>
 <div align="center">
     <img src="screenshots/Screenshot1.png" width="300px"</img> 
    <img src="screenshots/Screenshot2.png" width="300px"</img> 
