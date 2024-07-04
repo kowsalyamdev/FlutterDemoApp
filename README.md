@@ -20,7 +20,7 @@
 - Display the person name on the marker when it is tapped.
 ### Screenshots:
 <div >
-<img src="screenshots/screenshot.gif" alt="My Project GIF" width="500" height="600">
+<img src="screenshots/screenshot.gif" alt="My Project GIF" width="300" >
 </div>
 <div align="center">
     <img src="screenshots/Screenshot1.png" width="300px"</img> 
