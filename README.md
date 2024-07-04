@@ -50,28 +50,28 @@ android:value="Enter your API key here"/>
 
 IOS
 -Navigate to ios/Runner/AppDelegate.swift
-  GMSServices.provideAPIKey("YOUR-KEY") 
+  - GMSServices.provideAPIKey("YOUR-KEY") 
 - In info.plist file
-  <key>io.flutter.embedded_views_preview</key>
-  <true/>
-  <key>NSLocationWhenInUseUsageDescription</key>
-  <string>This app needs access to location when open.</string>
-  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-  <string>This app needs access to location when in the background.</string>
-  <key>NSLocationAlwaysUsageDescription</key>
-  <string>This app needs access to location when in the background.</string>
-  <key>NSContactsUsageDescription</key>
-  <string>This app needs access to contacts to show them on the map.</string>
-  <key>NSPhotoLibraryUsageDescription</key>
-  <string>This app needs access to photos to show them on the map.</string>
-  <key>NSCameraUsageDescription</key>
-  <string>This app needs access to the camera to show photos on the map.</string>
+  - <key>io.flutter.embedded_views_preview</key>
+  -  <true/>
+  -  <key>NSLocationWhenInUseUsageDescription</key>
+  -  <string>This app needs access to location when open.</string>
+  -  <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  -  <string>This app needs access to location when in the background.</string>
+  -  <key>NSLocationAlwaysUsageDescription</key>
+  -  <string>This app needs access to location when in the background.</string>
+  -  <key>NSContactsUsageDescription</key>
+  -  <string>This app needs access to contacts to show them on the map.</string>
+  -  <key>NSPhotoLibraryUsageDescription</key>
+  -  <string>This app needs access to photos to show them on the map.</string>
+  -  <key>NSCameraUsageDescription</key>
+  -  <string>This app needs access to the camera to show photos on the map.</string>
 
 ## Google map key
--- you can use my existing key [i can provide you on request] or you can use your own key.
+  - you can use get your own key from google cloud
 ## Testing 
- -- two test cases for getting number users success and failure case using mockito
- -- for testing testcases -Run following command inside project folder "flutter pub  run build_runner build"
+  - two test cases for getting number users success and failure case using mockito
+  - for testing testcases -Run following command inside project folder "flutter pub  run build_runner build"
 ### Screenshots:
 
 <div align="center">
