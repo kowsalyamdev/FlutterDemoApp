@@ -27,7 +27,7 @@
    <img src="screenshots/Screenshot4.png" width="300px"</img> 
 </div>
 
-### Setup instruction
+## Setup instruction
 ##Get the Flutter Source Code:
 If the app is hosted on a platform like GitHub, you'll need to download or "clone" the source code to your local computer.
 You can do this by using a Git client or by downloading a ZIP file of the project.
